@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:collectionviewrepro="clr-namespace:CollectionViewRepro"
+             mc:Ignorable="d"
+             x:Class="CollectionViewRepro.MainPage">
+
+    <StackLayout BackgroundColor="Gray">
+        <CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Donec sit amet blandit odio. Sed erat lectus, auctor vitae fermentum ac, rutrum eget eros. Nunc efficitur magna ultrices.</x:String>
+                    <x:String>Pellentesque vitae tincidunt turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sagittis lorem vitae ipsum luctus.</x:String>
+                    <x:String>Pellentesque egestas, enim in feugiat feugiat, ante ligula commodo odio, quis blandit dolor mi in ante. Sed ut porta massa, ac volutpat nisl.</x:String>
+                    <x:String>Vivamus vitae eros et enim maximus porttitor at quis felis. Curabitur ultrices venenatis velit sed blandit. Suspendisse potenti. In vehicula laoreet eros.</x:String>
+                    <x:String>Maecenas et libero ex. In lobortis tempus lobortis. Aliquam erat volutpat. Proin nec euismod nulla, at congue lectus. Quisque nibh neque.</x:String>
+                    <x:String>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse rhoncus mauris quis bibendum malesuada.</x:String>
+                    <x:String>Aenean vestibulum metus non lectus porttitor aliquet. Nulla consequat enim et turpis maximus efficitur venenatis non nisl. Nam laoreet mauris sit amet sollicitudin dignissim.</x:String>
+                    <x:String>Nulla pretium orci vel pellentesque mattis. Phasellus ut pellentesque leo. Phasellus sagittis posuere iaculis. Proin accumsan in tortor ac blandit.</x:String>
+                    <x:String>Vivamus dolor turpis, porta eu mauris suscipit, aliquam finibus metus. Curabitur venenatis urna elit, tristique condimentum enim posuere nec. Fusce cursus.</x:String>
+                    <x:String>Integer justo eros, pharetra vitae posuere vel, auctor nec urna. Quisque ut erat dolor. Aliquam iaculis tincidunt quam eleifend tincidunt.</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Grid Margin="6,3" BackgroundColor="White">
+                            <Label Text="{Binding}" Margin="30,3" />
+                        </Grid>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
